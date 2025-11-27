@@ -1,0 +1,17 @@
+name: Build and push
+run-name: BUILDING AND PUSHING]
+
+on: [pull_request]
+
+jobs:
+  build:
+    name: BuildAndTest
+    runs-on: ubuntu-latest
+    steps:
+      - name: .NET Build and Test
+  # You may pin to the exact commit or the version.
+  # uses: yashmahi88/build-01@c81a5bd74495d223081162a1fd7ba2dfa071ae53
+        uses: yashmahi88/build-01@v2
+        with:
+    # The version of .NET SDK to use
+          dotnet-version: 8.0.x
